@@ -19,7 +19,7 @@ jobs:
         if: github.ref == 'refs/heads/main'
         run: |
           rm -rf built-site
-          git clone --branch gh-pages --depth 1 https://github.com/alvinlollo/alvin.vilaythong.us.git built-site || (mkdir built-site && cd built-site && git init && git checkout -b gh-pages)
+          mkdir built-site && cd built-site && git init && git checkout -b gh-pages || true
 
       - name: Setup Hugo
         run: |
