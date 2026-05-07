@@ -1,0 +1,13 @@
+[Unit]
+Description=Git Auto-Commit for Obsidian Vault
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/root/dockeryml/blog/scripts/watch-obsidian.sh
+Restart=always
+RestartSec=10
+User=root
+
+[Install]
+WantedBy=multi-user.target
