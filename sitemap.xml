@@ -4,6 +4,19 @@
 
   <url>
     <loc>https://alvin.vilaythong.us/</loc>
+    <lastmod>2026-05-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://alvin.vilaythong.us/posts/how-to-add-a-link-to-another-spreadsheet/</loc>
+    <lastmod>2026-05-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://alvin.vilaythong.us/posts/</loc>
+    <lastmod>2026-05-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
