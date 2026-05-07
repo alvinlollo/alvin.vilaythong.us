@@ -39,4 +39,4 @@ jobs:
           git config user.name 'alvinlollo'
           git config user.email 'alvin.vilaythong@gmail.com'
           git commit -m 'Updated site' || echo "No changes to commit"
-          git push
+          git push origin gh-pages:gh-pages --force
