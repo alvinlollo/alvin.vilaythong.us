@@ -32,13 +32,10 @@ jobs:
       - name: Deploy
         if: github.ref == 'refs/heads/main'
         run: |
-          echo "Checking public folder..."
-          ls -la public/
-          echo "---"
-          ls -la public/posts/ || echo "No posts folder"
-          cp -R public/* ${GITHUB_WORKSPACE}/built-site/
           cd ${GITHUB_WORKSPACE}/built-site
-          git add .
+          rm -rf archetypes assets config hugo.toml i18n js lib public resources themes .git* 2>/dev/null || true
+          cp -R ${GITHUB_WORKSPACE}/public/* .
+          git add -A
           git config user.name 'alvinlollo'
           git config user.email 'alvin.vilaythong@gmail.com'
           git commit -m 'Updated site' || echo "No changes to commit"
