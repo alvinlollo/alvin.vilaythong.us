@@ -31,12 +31,13 @@ watch_git() {
 
 pull_submodule() {
     while true; do
-        sleep 30
+        sleep 60
         
         cd "$BLOG_DIR" || continue
-        if git submodule update --remote --init --quiet 2>/dev/null; then
+        git fetch origin 2>/dev/null
+        if git submodule update --remote --init 2>/dev/null; then
+            cd "$BLOG_DIR"
             if [[ -n $(git status --porcelain content/posts 2>/dev/null) ]]; then
-                cd "$BLOG_DIR"
                 git add content/posts
                 git commit -m "Update posts submodule: $(date '+%Y-%m-%d %H:%M:%S')" 2>/dev/null
                 log "Blog: Submodule updated and committed"
