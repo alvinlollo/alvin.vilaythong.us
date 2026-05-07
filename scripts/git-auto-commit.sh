@@ -29,9 +29,29 @@ watch_git() {
     done
 }
 
+pull_submodule() {
+    while true; do
+        inotifywait -e modify,create,delete,move "$BLOG_DIR/content/posts" 2>/dev/null >> "$LOG_FILE"
+        
+        sleep 2
+        
+        cd "$BLOG_DIR" || continue
+        if git submodule update --remote --quiet 2>/dev/null; then
+            if [[ -n $(git status --porcelain content/posts 2>/dev/null) ]]; then
+                cd "$BLOG_DIR"
+                git add content/posts
+                git commit -m "Update posts submodule: $(date '+%Y-%m-%d %H:%M:%S')" 2>/dev/null
+                log "Blog: Submodule updated and committed"
+                git push 2>/dev/null || log "Blog: Push failed (no remote or network issue)"
+            fi
+        fi
+    done
+}
+
 log "Starting git-auto-commit daemon"
 
 watch_git "$OBSIDIAN_DIR" "Obsidian" &
 watch_git "$BLOG_DIR" "Blog" &
+pull_submodule &
 
 wait
