@@ -8,18 +8,14 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
-
-      - name: Setup git for gh-pages
-        if: github.ref == 'refs/heads/main'
-        run: |
-          rm -rf built-site
-          mkdir built-site && cd built-site && git init && git checkout -b gh-pages || true
 
       - name: Setup Hugo
         run: |
@@ -30,12 +26,7 @@ jobs:
 
       - name: Deploy
         if: github.ref == 'refs/heads/main'
-        run: |
-          cd built-site
-          rm -rf archetypes assets config hugo.toml i18n js lib public resources themes .git* 2>/dev/null || true
-          cp -R ${GITHUB_WORKSPACE}/public/* .
-          git add -A
-          git config user.name 'alvinlollo'
-          git config user.email 'alvin.vilaythong@gmail.com'
-          git commit -m 'Updated site' || echo "No changes to commit"
-          git push origin gh-pages:gh-pages --force
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
