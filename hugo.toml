@@ -1,0 +1,3 @@
+baseURL = 'https://alvin.vilaythong.us'
+locale = 'en-us'
+title = 'My New Hugo Site'

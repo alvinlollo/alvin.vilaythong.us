@@ -1,0 +1,4 @@
+[[mounts]]
+  source = "/mnt/lxc_shares/Sync/Alvin/syncthing/Obsidian/Personal/1. Projects/Blog"
+  target = "content/posts"
+  absolute = true
