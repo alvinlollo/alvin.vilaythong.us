@@ -1,0 +1,13 @@
+[Unit]
+Description=Git Auto Commit Daemon for Obsidian and Blog
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/root/dockeryml/blog/scripts/git-auto-commit.sh
+Restart=always
+RestartSec=10
+User=root
+
+[Install]
+WantedBy=multi-user.target
