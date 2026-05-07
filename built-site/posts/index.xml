@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Alvin&#39;s Blog</title>
+    <link>https://alvin.vilaythong.us/posts/</link>
+    <description>Recent content in Posts on Alvin&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>alvin@vilaythong.us (Alvin Vilaythong)</managingEditor>
+    <webMaster>alvin@vilaythong.us (Alvin Vilaythong)</webMaster>
+    <copyright>© 2026 Alvin Vilaythong</copyright>
+    <lastBuildDate>Thu, 07 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://alvin.vilaythong.us/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How to add a link to another spreadsheet</title>
+      <link>https://alvin.vilaythong.us/posts/how-to-add-a-link-to-another-spreadsheet/</link>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <author>alvin@vilaythong.us (Alvin Vilaythong)</author>
+      <guid>https://alvin.vilaythong.us/posts/how-to-add-a-link-to-another-spreadsheet/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
