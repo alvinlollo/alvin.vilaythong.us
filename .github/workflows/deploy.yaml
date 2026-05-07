@@ -15,12 +15,11 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Checkout destination
-        uses: actions/checkout@v4
+      - name: Setup git for gh-pages
         if: github.ref == 'refs/heads/main'
-        with:
-          ref: gh-pages
-          path: built-site
+        run: |
+          rm -rf built-site
+          git clone --branch gh-pages --depth 1 https://github.com/alvinlollo/alvin.vilaythong.us.git built-site || (mkdir built-site && cd built-site && git init && git checkout -b gh-pages)
 
       - name: Setup Hugo
         run: |
@@ -32,7 +31,7 @@ jobs:
       - name: Deploy
         if: github.ref == 'refs/heads/main'
         run: |
-          cd ${GITHUB_WORKSPACE}/built-site
+          cd built-site
           rm -rf archetypes assets config hugo.toml i18n js lib public resources themes .git* 2>/dev/null || true
           cp -R ${GITHUB_WORKSPACE}/public/* .
           git add -A
