@@ -31,12 +31,10 @@ watch_git() {
 
 pull_submodule() {
     while true; do
-        inotifywait -e modify,create,delete,move "$BLOG_DIR/content/posts" 2>/dev/null >> "$LOG_FILE"
-        
-        sleep 2
+        sleep 30
         
         cd "$BLOG_DIR" || continue
-        if git submodule update --remote --quiet 2>/dev/null; then
+        if git submodule update --remote --init --quiet 2>/dev/null; then
             if [[ -n $(git status --porcelain content/posts 2>/dev/null) ]]; then
                 cd "$BLOG_DIR"
                 git add content/posts
