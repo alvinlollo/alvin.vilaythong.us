@@ -10,6 +10,7 @@ disableImageOptimization = false
 disableImageOptimizationMD = false
 disableTextInHeader = false
 hotlinkFeatureImage = false
+defaultBackgroundImage = "/img/background.svg"
 fingerprintAlgorithm = "sha512"
 giteaDefaultServer = "https://git.fsfe.org"
 forgejoDefaultServer = "https://v11.next.forgejo.org"
