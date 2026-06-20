@@ -2,31 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Alvin&#39;s Blog</title>
-    <link>https://alvin.vilaythong.us/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Alvin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>alvin@vilaythong.us (Alvin Vilaythong)</managingEditor>
     <webMaster>alvin@vilaythong.us (Alvin Vilaythong)</webMaster>
     <copyright>© 2026 Alvin Vilaythong</copyright>
-    <lastBuildDate>Thu, 07 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://alvin.vilaythong.us/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Discursive</title>
+      <link>http://localhost:1313/tags/discursive/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <author>alvin@vilaythong.us (Alvin Vilaythong)</author>
+      <guid>http://localhost:1313/tags/discursive/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Investment</title>
+      <link>http://localhost:1313/tags/investment/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <author>alvin@vilaythong.us (Alvin Vilaythong)</author>
+      <guid>http://localhost:1313/tags/investment/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Privacy</title>
+      <link>http://localhost:1313/tags/privacy/</link>
+      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+      <author>alvin@vilaythong.us (Alvin Vilaythong)</author>
+      <guid>http://localhost:1313/tags/privacy/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Surveillance</title>
+      <link>http://localhost:1313/tags/surveillance/</link>
+      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+      <author>alvin@vilaythong.us (Alvin Vilaythong)</author>
+      <guid>http://localhost:1313/tags/surveillance/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Google</title>
-      <link>https://alvin.vilaythong.us/tags/google/</link>
+      <link>http://localhost:1313/tags/google/</link>
       <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
       <author>alvin@vilaythong.us (Alvin Vilaythong)</author>
-      <guid>https://alvin.vilaythong.us/tags/google/</guid>
+      <guid>http://localhost:1313/tags/google/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Tutorials</title>
-      <link>https://alvin.vilaythong.us/tags/tutorials/</link>
+      <link>http://localhost:1313/tags/tutorials/</link>
       <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
       <author>alvin@vilaythong.us (Alvin Vilaythong)</author>
-      <guid>https://alvin.vilaythong.us/tags/tutorials/</guid>
+      <guid>http://localhost:1313/tags/tutorials/</guid>
       <description></description>
       
     </item>
