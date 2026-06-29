@@ -12,16 +12,10 @@ dateFormat = "2 January 2006"
 copyright = "© 2026 Alvin Vilaythong"
 
 [[params.author.links]]
-email = "mailto:alvin@vilaythong.us"
+bluesky = "https://bsky.app/profile/alvin.vilaythong.us"
 
 [[params.author.links]]
-github = "https://github.com/alvinlollo"
-
-[[params.author.links]]
-mastodon = "https://mastodon.social/@alvinlollo"
-
-[[params.author.links]]
-steam = "https://steamcommunity.com/profiles/76561199602126990/"
+phone = "tel:+61481300450"
 
 ["params.author"]
 name = "Alvin Vilaythong"
