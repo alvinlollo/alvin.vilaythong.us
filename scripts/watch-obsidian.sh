@@ -16,10 +16,9 @@ while true; do
     
     sleep 2
     
-    if [[ -n $(git status --porcelain 2>/dev/null) ]]; then
-        cd "$OBSIDIAN_DIR"
-        git add -A
-        git commit -m "Auto-commit: $(date '+%Y-%m-%d %H:%M:%S')" 2>/dev/null
+    cd "$OBSIDIAN_DIR"
+    git add -A
+    if git commit -m "Auto-commit: $(date '+%Y-%m-%d %H:%M:%S')" 2>/dev/null; then
         log "Obsidian: Auto-committed changes"
         git push 2>/dev/null || log "Obsidian: Push failed"
     fi
