@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Discursive on Alvin&#39;s Blog</title>
-    <link>http://localhost:1313/tags/discursive/</link>
+    <link>https://alvin.vilaythong.us/tags/discursive/</link>
     <description>Recent content in Discursive on Alvin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>alvin@vilaythong.us (Alvin Vilaythong)</managingEditor>
     <webMaster>alvin@vilaythong.us (Alvin Vilaythong)</webMaster>
     <copyright>© 2026 Alvin Vilaythong</copyright>
-    <lastBuildDate>Mon, 29 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/discursive/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://alvin.vilaythong.us/tags/discursive/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How I created this blog</title>
-      <link>http://localhost:1313/posts/how-i-created-this-blog/</link>
+      <link>https://alvin.vilaythong.us/posts/how-i-created-this-blog/</link>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <author>alvin@vilaythong.us (Alvin Vilaythong)</author>
-      <guid>http://localhost:1313/posts/how-i-created-this-blog/</guid>
+      <guid>https://alvin.vilaythong.us/posts/how-i-created-this-blog/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Investment Options</title>
-      <link>http://localhost:1313/posts/investment-options/</link>
+      <link>https://alvin.vilaythong.us/posts/investment-options/</link>
       <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
       <author>alvin@vilaythong.us (Alvin Vilaythong)</author>
-      <guid>http://localhost:1313/posts/investment-options/</guid>
+      <guid>https://alvin.vilaythong.us/posts/investment-options/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Children&#39;s Online Privacy code analysis</title>
-      <link>http://localhost:1313/posts/childrens-online-privacy-code-analysis/</link>
+      <link>https://alvin.vilaythong.us/posts/childrens-online-privacy-code-analysis/</link>
       <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
       <author>alvin@vilaythong.us (Alvin Vilaythong)</author>
-      <guid>http://localhost:1313/posts/childrens-online-privacy-code-analysis/</guid>
+      <guid>https://alvin.vilaythong.us/posts/childrens-online-privacy-code-analysis/</guid>
       <description></description>
       
     </item>
