@@ -15,13 +15,11 @@ while true; do
     sleep 60
     
     git fetch origin 2>/dev/null
-    if git submodule update --remote --init 2>/dev/null; then
-        cd "$BLOG_DIR"
-        if [[ -n $(git status --porcelain content/posts 2>/dev/null) ]]; then
-            git add content/posts
-            git commit -m "Update posts submodule: $(date '+%Y-%m-%d %H:%M:%S')" 2>/dev/null
-            log "Submodule: Updated and committed"
-            git push 2>/dev/null || log "Submodule: Push failed"
-        fi
+    git submodule update --remote --init 2>/dev/null
+    cd "$BLOG_DIR"
+    git add content/posts
+    if git commit -m "Update posts submodule: $(date '+%Y-%m-%d %H:%M:%S')" 2>/dev/null; then
+        log "Submodule: Updated and committed"
+        git push 2>/dev/null || log "Submodule: Push failed"
     fi
 done
