@@ -21,9 +21,6 @@ email = "mailto:alvin@vilaythong.us"
 github = "https://github.com/alvinlollo/"
 
 [[params.author.links]]
-google = ""
-
-[[params.author.links]]
 mastodon = "https://mastodon.social/@alvinlollo"
 
 [[params.author.links]]
@@ -35,8 +32,6 @@ phone = "tel:+61481300450"
 [[params.author.links]]
 steam = "https://steamcommunity.com/profiles/76561199602126990/"
 
-[[params.author.links]]
-whatsapp = ""
 
 ["params.author"]
 name = "Alvin Vilaythong"
