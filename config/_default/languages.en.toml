@@ -18,16 +18,25 @@ bluesky = "https://bsky.app/profile/alvin.vilaythong.us"
 email = "mailto:alvin@vilaythong.us"
 
 [[params.author.links]]
-github = "https://github.com/alvinlollo"
+github = "https://github.com/alvinlollo/"
+
+[[params.author.links]]
+google = ""
 
 [[params.author.links]]
 mastodon = "https://mastodon.social/@alvinlollo"
+
+[[params.author.links]]
+orcid = "https://orcid.org/0009-0002-7988-3004"
 
 [[params.author.links]]
 phone = "tel:+61481300450"
 
 [[params.author.links]]
 steam = "https://steamcommunity.com/profiles/76561199602126990/"
+
+[[params.author.links]]
+whatsapp = ""
 
 ["params.author"]
 name = "Alvin Vilaythong"
