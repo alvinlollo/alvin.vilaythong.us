@@ -19,9 +19,11 @@ fathomAnalytics = { }
 umamiAnalytics = { }
 selineAnalytics = { }
 buymeacoffee = { }
-verification = { }
 rssnext = { }
 advertisement = { }
+
+[verification]
+google = ""
 
 [header]
 layout = "sticky"
